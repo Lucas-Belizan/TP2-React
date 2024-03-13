@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    background: linear-gradient(to bottom right, rgb(228, 234, 237), white);
+}
+
+.principal {
+    width: 800px;
+}
+
+.estructura-titulo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+}
+
+.estructura {
+    display: flex;
+    gap: 10px
+}
+
+h1 {
+    font-size: 40px;
+    padding: 10px;
+}
+
+img{
+    width: 60px;
+    height: 60px;
+}
+
+.año {
+    width: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.año span {
+    display: flex;
+    font-size: 40px;
+}
+
+.division {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.division .lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    overflow: scroll;
+    height: 165px;
+    background: linear-gradient(to bottom right, rgb(228, 234, 237), white);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.filtrar-titulo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filtrar {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 373px;
+    width: 180px;
+    padding: 10px;
+    background: linear-gradient(to bottom right, rgb(228, 234, 237), white);
+    border-radius: 10px;
+    gap: 5px;
+}
+
+.filtro {
+    width: 200px;
+}
+
+.buscar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer{
+    padding: 10px;
+}
+
+footer p{
+    font-size: 9px;
+}
+
+
+
+@media screen and (max-width: 1100px){
+    .principal{
+        width: 600px;
+        align-items: center;
+    }
+    .division .lista{
+        width: 400px;
+    }
+    .filtro{
+       width: 160px;
+    }
+
+}
+
+@media screen and (max-width: 765px){
+    .principal{
+        width: 400px;
+    }
+    .año{
+        display: none;
+    }
+    .estructura{
+        flex-direction: column;
+    }
+    .filtrar{
+        display: flex;
+        align-items: center;
+        height: 200px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 428px){
+    h1{
+        font-size: 32px;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+    }
+    .division .lista{
+        height: 300px;
+        width: 350px;
+    }
+    .filtrar{
+        width: 350px;
+    }
+}

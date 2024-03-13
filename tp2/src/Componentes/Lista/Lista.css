@@ -1,0 +1,45 @@
+.lista-contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 300px;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 1px 1px 3px 3px rgb(220,226,236);
+    border-radius: 10px;
+}
+
+.lista-contacto .id{
+    display: none;
+}
+
+.lista-contacto .datos-contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.lista-contacto .datos-contacto .nombre{
+    display: flex;
+    justify-content: center;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+}
+
+.eliminar{
+    border-radius: 10px;
+    border-style: none;
+    background-color: red;
+    box-shadow: 1px 1px 3px 3px rgb(220,226,236);
+    padding: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px){
+    .lista-contacto{
+        width: 200px;
+    }
+}

@@ -1,0 +1,105 @@
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 1px 1px 3px 3px rgb(220,226,236);
+    background: linear-gradient(to bottom right, rgb(228, 234, 237), white);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.titulo-formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.formulario1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario1 .datos-iniciales{
+    display: flex;
+    gap: 30px;
+}
+
+.formulario1 .datos-iniciales input{
+    width: 181px;
+}
+
+.formulario1 .datos-medios{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+
+}
+
+.formulario1 .datos-finales{
+    display: flex;
+    gap: 30px;
+}
+
+.formulario1 .datos-finales input{
+    width: 181px;
+}
+
+
+
+.guardar{
+    border-radius: 10px;
+    border-style: none;
+    padding: 5px;
+    background: rgb(99, 228, 99);
+    box-shadow: 1px 1px 3px 3px rgb(220,226,236);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1100px){
+    form{
+        width: 400px;
+    }
+    .formulario1{
+        align-items: center;
+    }
+    .formulario1 .datos-iniciales input{
+        width: 150px;
+    }
+    .formulario1 .datos-finales input{
+        width: 150px;
+    }
+    .formulario1 .datos-medios{
+        align-items: center;
+    }
+    .formulario1 .datos-medios input{
+        width: 335px;
+    }
+}
+
+@media screen and (max-width: 428px){
+    form{
+        width: 350px;
+    }
+    .formulario1 .datos-iniciales{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .formulario1 .datos-iniciales input{
+        width: 300px;
+    }
+    .formulario1 .datos-medios input{
+        width: 300px;
+    }
+    .formulario1 .datos-finales{
+        flex-direction:column;
+        gap: 10px;
+    }
+    .formulario1 .datos-finales input{
+        width: 300px;
+    }
+}
+
